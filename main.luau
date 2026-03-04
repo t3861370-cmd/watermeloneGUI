@@ -1,5 +1,5 @@
 return (function(...)
-	local t = {
+	local r = {
 			11069542279237,
 			"\102\081\055\105\079\066\103\090\077\076\085\061",
 			139,
@@ -218,7 +218,7 @@ return (function(...)
 			20444668250720,
 			11487240595914,
 			3397422812252,
-			"\055\071\082\076\120\055\101\099\084\082\122\065\066\073\081\083\054\100\067\099\065\112\088\082\051\090\052\107\088\075\088\070\107\054\070\077\069\084\082\102\083\071\104\108\054\057\120\114\097\054\072\099\069\051\086\076\080\082\118\117\052\066\067\102\085\111\057\053\053\114\056\116\086\079\071\048\104\049\085\072\113\052\078\065\078\048\116\082\115\090\088\101\098\050\076\117\069\054\120\055\071\083\100\114\074\076\116\080\087\073\052\110\087\043\103\085\048\048\110\106\111\107\111\077",
+			"\055\071\082\076\120\102\077\088\072\078\073\108\119\087\084\088\057\116\073\049\101\100\107\107\054\098\051\070\098\043\057\057\076\100\085\048\101\106\077\083\081\076\118\088\069\109\049\114\097\107\061\061",
 			24251199182905,
 			"\073\053\055\070\099\113\056\061",
 			22329142661435,
@@ -226,7 +226,7 @@ return (function(...)
 			"\056\116\102\056\082\067\118\120\069\122\061\061",
 			"\086\086\082\069\109\113\054\076\050\073\117\098\072\083\107\061",
 			24477765622028,
-			"\113\114\118\088\109\085\050\111\055\097\070\080\079\099\098\097\068\066\119\103\106\055\119\119\075\090\084\105\107\112\066\085\076\104\117\109\100\065\081\121\067\100\043\101\053\083\081\083\111\107\111\069\102\099\102\056\118\108\075\074\077\114\076\077\110\115\080\100\102\080\108\117\049\080\083\078\081\115\099\056\054\084\113\098\071\073\102\052\049\084\106\068\076\114\069\065\088\103\110\074\086\089\120\079\097\080\080\066\085\081\050\114\051\088\083\077\109\122\061\061",
+			"\113\114\118\088\109\071\100\073\116\103\089\113\072\043\104\109\105\066\051\076\070\114\054\057\072\098\104\071\053\053\113\088\057\104\113\110\055\085\118\100\080\100\056\055\108\113\108\061",
 			"\110\118\111\090\101\087\084\087\047\098\098\105\082\122\083\111\116\108\061\061",
 			"\067\078\071\101\056\108\061\061",
 			3775391468988,
@@ -578,18 +578,18 @@ return (function(...)
 			"\077\065\111\115\115\065\103\102\116\074\057\112\108\111\051\088\087\106\069\061",
 			"\088\117\111\049\075\098\061\061",
 		};
-	for u, N in ipairs({ { 1, 577 }, { 1, 188 }, { 189, 577 } }) do
-		while N[1] < N[2] do
-			t[N[1]], t[N[2]], N[1], N[2] = t[N[2]], t[N[1]], N[1] + 1, N[2] - 1;
+	for I, q in ipairs({ { 1, 577 }, { 1, 188 }, { 189, 577 } }) do
+		while q[1] < q[2] do
+			r[q[1]], r[q[2]], q[1], q[2] = r[q[2]], r[q[1]], q[1] + 1, q[2] - 1;
 		end;
 	end;
-	local function a(u)
-		return t[u + 1];
+	local function u(I)
+		return r[I + 1];
 	end;
 	do
-		local u = table.insert;
-		local N = t;
-		local y = {
+		local I = table.insert;
+		local q = r;
+		local W = {
 				A = 17,
 				N = 29,
 				y = 7,
@@ -655,395 +655,395 @@ return (function(...)
 				q = 3,
 				["\048"] = 5,
 			};
-		local B = string.char;
-		local P = math.floor;
-		local j = string.len;
-		local R = string.sub;
-		local X = table.concat;
-		local b = type;
-		for q = 1, #N, 1 do
-			local M = N[q];
-			if b(M) == "\115\116\114\105\110\103" then
-				local b = j(M);
-				local O = {};
-				local U = 1;
-				local V = 0;
-				local s = 0;
-				while U <= b do
-					local N = R(M, U, U);
-					local j = y[N];
-					if j then
-						V = V + j * 64 ^ (3 - s);
-						s = s + 1;
-						if s == 4 then
-							s = 0;
-							local N = P(V / 65536);
-							local y = P((V % 65536) / 256);
-							local j = V % 256;
-							u(O, B(N, y, j));
-							V = 0;
+		local G = string.char;
+		local R = math.floor;
+		local o = string.len;
+		local D = string.sub;
+		local x = table.concat;
+		local Q = type;
+		for M = 1, #q, 1 do
+			local X = q[M];
+			if Q(X) == "\115\116\114\105\110\103" then
+				local Q = o(X);
+				local L = {};
+				local J = 1;
+				local w = 0;
+				local f = 0;
+				while J <= Q do
+					local q = D(X, J, J);
+					local o = W[q];
+					if o then
+						w = w + o * 64 ^ (3 - f);
+						f = f + 1;
+						if f == 4 then
+							f = 0;
+							local q = R(w / 65536);
+							local W = R((w % 65536) / 256);
+							local o = w % 256;
+							I(L, G(q, W, o));
+							w = 0;
 						end;
-					elseif N == "\061" then
-						u(O, B(P(V / 65536)));
-						if U >= b or R(M, U + 1, U + 1) ~= "\061" then
-							u(O, B(P((V % 65536) / 256)));
+					elseif q == "\061" then
+						I(L, G(R(w / 65536)));
+						if J >= Q or D(X, J + 1, J + 1) ~= "\061" then
+							I(L, G(R((w % 65536) / 256)));
 						end;
 						break;
 					end;
-					U = U + 1;
+					J = J + 1;
 				end;
-				N[q] = X(O);
+				q[M] = x(L);
 			end;
 		end;
 	end;
-	local T, m;
+	local t, z;
 	do
-		local u = math[a(449)];
-		local N = math[a(354)];
-		local y = table[a(490)];
-		local B = string[a(233)];
-		local P = a(566);
-		local j = a(377);
-		local R = {};
-		local X = {};
-		local b = a(566);
-		local q = {};
-		for u = a(238), a(370), a(238) do
-			q[u] = u;
+		local I = math[u(449)];
+		local q = math[u(354)];
+		local W = table[u(490)];
+		local G = string[u(233)];
+		local R = u(566);
+		local o = u(377);
+		local D = {};
+		local x = {};
+		local Q = u(566);
+		local M = {};
+		for I = u(238), u(370), u(238) do
+			M[I] = I;
 		end;
 		repeat
-			local u = N(a(238), #q);
-			local P = y(q, u);
-			X[P] = B(P - a(238));
-		until #q == a(566);
-		local M = {};
-		local function O()
-			if #M == a(566) then
-				P = (P * a(238) + a(439)) % a(292);
+			local I = q(u(238), #M);
+			local R = W(M, I);
+			x[R] = G(R - u(238));
+		until #M == u(566);
+		local X = {};
+		local function L()
+			if #X == u(566) then
+				R = (R * u(238) + u(439)) % u(292);
 				repeat
-					j = (j * a(388)) % a(22);
-				until j ~= a(238);
-				local N = j % a(352);
-				local y = (u(P / a(377) ^ (a(554) - (j - N) / a(352))) % a(433)) / a(377) ^ N;
-				local B = u((y % a(238)) * a(433)) + u(y);
-				local R = B % a(157);
-				local X = (B - R) / a(157);
-				local b = R % a(370);
-				local q = (R - b) / a(370);
-				local O = X % a(370);
-				local U = (X - O) / a(370);
-				M = {
-						b,
-						q,
-						O,
-						U,
+					o = (o * u(388)) % u(22);
+				until o ~= u(238);
+				local q = o % u(352);
+				local W = (I(R / u(377) ^ (u(554) - (o - q) / u(352))) % u(433)) / u(377) ^ q;
+				local G = I((W % u(238)) * u(433)) + I(W);
+				local D = G % u(157);
+				local x = (G - D) / u(157);
+				local Q = D % u(370);
+				local M = (D - Q) / u(370);
+				local L = x % u(370);
+				local J = (x - L) / u(370);
+				X = {
+						Q,
+						M,
+						L,
+						J,
 					};
 			end;
-			return table[a(490)](M);
+			return table[u(490)](X);
 		end;
-		local U = {};
-		T = setmetatable({}, { [a(243)] = U, [a(448)] = nil });
-		function m(u, N)
-			local y = U;
-			if y[N] then
+		local J = {};
+		t = setmetatable({}, { [u(243)] = J, [u(448)] = nil });
+		function z(I, q)
+			local W = J;
+			if W[q] then
  
 			else
-				M = {};
-				local B = X;
-				P = N % a(292);
-				j = N % a(150) + a(377);
-				local R = string[a(503)](u);
-				y[N] = a(17);
-				local b = a(190);
-				for P = a(238), R, a(238) do
-					b = ((string[a(472)](u, P) + O()) + b) % a(370);
-					y[N] = y[N] .. B[b + a(238)];
+				X = {};
+				local G = x;
+				R = q % u(292);
+				o = q % u(150) + u(377);
+				local D = string[u(503)](I);
+				W[q] = u(17);
+				local Q = u(190);
+				for R = u(238), D, u(238) do
+					Q = ((string[u(472)](I, R) + L()) + Q) % u(370);
+					W[q] = W[q] .. G[Q + u(238)];
 				end;
 			end;
-			return N;
+			return q;
 		end;
 	end;
-	if _G[T[m(a(117), a(125))]] then
+	if _G[t[z(u(117), u(125))]] then
 		return;
 	end;
 	if not game:IsLoaded() then
-		game[T[m(a(231), a(387))]]:Wait();
+		game[t[z(u(231), u(387))]]:Wait();
 	end;
-	if _G[T[m(a(95), a(244))]] then
+	if _G[t[z(u(95), u(244))]] then
 		return;
 	end;
-	_G[T[m(a(340), a(101))]] = a(505);
-	if not _G[T[m(a(375), a(432))]] then
-		_G[T[m(a(573), a(293))]] = a(511);
+	_G[t[z(u(340), u(101))]] = u(505);
+	if not _G[t[z(u(375), u(432))]] then
+		_G[t[z(u(573), u(293))]] = u(511);
 	end;
-	local u = game:GetService(T[m(a(82), a(341))]);
-	local N = game:GetService(T[m(a(523), a(288))]);
-	local y = game:GetService(T[m(a(379), a(450))]);
-	local B = game:GetService(T[m(a(546), a(493))]);
-	local P = T[m(a(56), a(218))];
-	local j = os[T[m(a(518), a(182))]]();
-	local function R()
-		local u, N = pcall(identifyexecutor);
-		if u and N then
-			return tostring(N);
+	local I = game:GetService(t[z(u(82), u(341))]);
+	local q = game:GetService(t[z(u(523), u(288))]);
+	local W = game:GetService(t[z(u(379), u(450))]);
+	local G = game:GetService(t[z(u(546), u(493))]);
+	local R = t[z(u(56), u(218))];
+	local o = os[t[z(u(518), u(182))]]();
+	local function D()
+		local I, q = pcall(identifyexecutor);
+		if I and q then
+			return tostring(q);
 		end;
-		for u, N in ipairs({ T[m(a(525), a(332))], T[m(a(114), a(248))] }) do
-			local y = (getfenv())[N];
-			if y then
-				local u, N = pcall(y);
-				if u and N then
-					return tostring(N);
+		for I, q in ipairs({ t[z(u(525), u(332))], t[z(u(114), u(248))] }) do
+			local W = (getfenv())[q];
+			if W then
+				local I, q = pcall(W);
+				if I and q then
+					return tostring(q);
 				end;
 			end;
 		end;
-		return T[m(a(500), a(235))];
+		return t[z(u(500), u(235))];
 	end;
-	local function X()
-		if jit and jit[T[m(a(122), a(443))]] then
-			return jit[T[m(a(105), a(381))]];
+	local function x()
+		if jit and jit[t[z(u(122), u(443))]] then
+			return jit[t[z(u(105), u(381))]];
 		end;
-		return T[m(a(42), a(49))];
+		return t[z(u(42), u(49))];
 	end;
-	local function b()
-		local u = { gethwid, getfingerprint, get_hwid };
-		for u, N in ipairs(u) do
-			if N then
-				local u, y = pcall(N);
-				if u and y then
-					return tostring(y);
+	local function Q()
+		local I = { gethwid, getfingerprint, get_hwid };
+		for I, q in ipairs(I) do
+			if q then
+				local I, W = pcall(q);
+				if I and W then
+					return tostring(W);
 				end;
 			end;
 		end;
-		return T[m(a(424), a(498))];
+		return t[z(u(424), u(498))];
 	end;
-	local function q(u)
-		local y = R();
-		local B = X();
-		local j = b();
-		local q = P .. (T[m(a(4), a(364))] .. (T[m(a(149), a(12))] .. (tostring(u[T[m(a(444), a(397))]]) .. (T[m(a(550), a(204))] .. (N:UrlEncode(u[T[m(a(437), a(160))]]) .. (T[m(a(368), a(45))] .. (N:UrlEncode(u[T[m(a(434), a(26))]]) .. (T[m(a(522), a(173))] .. (N:UrlEncode(y) .. (T[m(a(338), a(83))] .. (N:UrlEncode(B) .. (T[m(a(314), a(529))] .. (tostring(u[T[m(a(2), a(154))]]) .. (T[m(a(547), a(280))] .. (N:UrlEncode(u[T[m(a(297), a(517))]]) .. (T[m(a(561), a(466))] .. (tostring(game[T[m(a(47), a(146))]]) .. (T[m(a(20), a(465))] .. N:UrlEncode(j)))))))))))))))))));
-		pcall(game[T[m(a(254), a(426))]], game, q);
+	local function M(I)
+		local W = D();
+		local G = x();
+		local o = Q();
+		local M = R .. (t[z(u(4), u(364))] .. (t[z(u(149), u(12))] .. (tostring(I[t[z(u(444), u(397))]]) .. (t[z(u(550), u(204))] .. (q:UrlEncode(I[t[z(u(437), u(160))]]) .. (t[z(u(368), u(45))] .. (q:UrlEncode(I[t[z(u(434), u(26))]]) .. (t[z(u(522), u(173))] .. (q:UrlEncode(W) .. (t[z(u(338), u(83))] .. (q:UrlEncode(G) .. (t[z(u(314), u(529))] .. (tostring(I[t[z(u(2), u(154))]]) .. (t[z(u(547), u(280))] .. (q:UrlEncode(I[t[z(u(297), u(517))]]) .. (t[z(u(561), u(466))] .. (tostring(game[t[z(u(47), u(146))]]) .. (t[z(u(20), u(465))] .. q:UrlEncode(o)))))))))))))))))));
+		pcall(game[t[z(u(254), u(426))]], game, M);
 	end;
-	local function M(u)
-		local N = os[T[m(a(376), a(481))]]();
-		local y = math[T[m(a(164), a(569))]](N - j);
-		j = N;
-		local B = P .. (T[m(a(148), a(64))] .. (T[m(a(507), a(85))] .. (tostring(u[T[m(a(19), a(317))]]) .. (T[m(a(70), a(274))] .. tostring(y)))));
-		pcall(game[T[m(a(544), a(206))]], game, B);
+	local function X(I)
+		local q = os[t[z(u(376), u(481))]]();
+		local W = math[t[z(u(164), u(569))]](q - o);
+		o = q;
+		local G = R .. (t[z(u(148), u(64))] .. (t[z(u(507), u(85))] .. (tostring(I[t[z(u(19), u(317))]]) .. (t[z(u(70), u(274))] .. tostring(W)))));
+		pcall(game[t[z(u(544), u(206))]], game, G);
 	end;
-	local function O(u, y)
-		local B = P .. (T[m(a(106), a(565))] .. (T[m(a(119), a(429))] .. (tostring(u[T[m(a(250), a(68))]]) .. (T[m(a(385), a(404))] .. N:UrlEncode(y)))));
-		pcall(game[T[m(a(541), a(486))]], game, B);
+	local function L(I, W)
+		local G = R .. (t[z(u(106), u(565))] .. (t[z(u(119), u(429))] .. (tostring(I[t[z(u(250), u(68))]]) .. (t[z(u(385), u(404))] .. q:UrlEncode(W)))));
+		pcall(game[t[z(u(541), u(486))]], game, G);
 	end;
-	q(y[T[m(a(485), a(527))]]);
-	B[T[m(a(294), a(155))]]:Connect(function(u, N)
-		if N == Enum[T[m(a(476), a(232))]][T[m(a(156), a(52))]] then
-			if string[T[m(a(187), a(208))]](u, T[m(a(396), a(327))]) then
-				O(y[T[m(a(316), a(179))]], u);
+	M(W[t[z(u(485), u(527))]]);
+	G[t[z(u(294), u(155))]]:Connect(function(I, q)
+		if q == Enum[t[z(u(476), u(232))]][t[z(u(156), u(52))]] then
+			if string[t[z(u(187), u(208))]](I, t[z(u(396), u(327))]) then
+				L(W[t[z(u(316), u(179))]], I);
 			end;
 		end;
 	end);
-	task[T[m(a(10), a(362))]](function()
-		while task[T[m(a(390), a(23))]](a(239)) do
-			M(y[T[m(a(310), a(57))]]);
+	task[t[z(u(10), u(362))]](function()
+		while task[t[z(u(390), u(23))]](u(239)) do
+			X(W[t[z(u(310), u(57))]]);
 		end;
 	end);
-	local U = { [T[m(a(351), a(342))]] = a(264), [T[m(a(262), a(7))]] = a(181), [T[m(a(277), a(92))]] = a(566) };
-	local V = (loadstring(game:HttpGet(T[m(a(414), a(403))], a(505))))();
-	local s = (loadstring(game:HttpGet(T[m(a(406), a(255))], a(505))))();
-	local K = V[T[m(a(123), a(413))]];
-	local i = {};
-	local r = V:Window({ [T[m(a(24), a(28))]] = T[m(a(401), a(480))] });
-	local c = V:Window({ [T[m(a(526), a(0))]] = T[m(a(237), a(421))] });
-	local p = V:Window({ [T[m(a(177), a(542))]] = T[m(a(513), a(236))] });
-	local g = V:Window({ [T[m(a(502), a(564))]] = T[m(a(487), a(80))] });
-	local I = V:Window({ [T[m(a(491), a(557))]] = T[m(a(34), a(77))] });
-	function AutosaveSettings(u)
-		_G[T[m(a(91), a(193))]] = u;
-		local y = T[m(a(330), a(488))];
-		local B = y .. T[m(a(560), a(407))];
-		if not isfolder(y) then
-			makefolder(y);
+	local J = { [t[z(u(351), u(342))]] = u(264), [t[z(u(262), u(7))]] = u(181), [t[z(u(277), u(92))]] = u(566) };
+	local w = (loadstring(game:HttpGet(t[z(u(414), u(403))], u(505))))();
+	local f = (loadstring(game:HttpGet(t[z(u(406), u(255))], u(505))))();
+	local d = w[t[z(u(123), u(413))]];
+	local C = {};
+	local j = w:Window({ [t[z(u(24), u(28))]] = t[z(u(401), u(480))] });
+	local Z = w:Window({ [t[z(u(526), u(0))]] = t[z(u(237), u(421))] });
+	local p = w:Window({ [t[z(u(177), u(542))]] = t[z(u(513), u(236))] });
+	local A = w:Window({ [t[z(u(502), u(564))]] = t[z(u(487), u(80))] });
+	local P = w:Window({ [t[z(u(491), u(557))]] = t[z(u(34), u(77))] });
+	function AutosaveSettings(I)
+		_G[t[z(u(91), u(193))]] = I;
+		local W = t[z(u(330), u(488))];
+		local G = W .. t[z(u(560), u(407))];
+		if not isfolder(W) then
+			makefolder(W);
 		end;
-		local function P()
-			local u = {};
-			for N, y in pairs(V[T[m(a(136), a(167))]]) do
-				if typeof(y) == T[m(a(307), a(158))] then
-					u[N] = { [T[m(a(276), a(469))]] = tostring(y) };
+		local function R()
+			local I = {};
+			for q, W in pairs(w[t[z(u(136), u(167))]]) do
+				if typeof(W) == t[z(u(307), u(158))] then
+					I[q] = { [t[z(u(276), u(469))]] = tostring(W) };
 				else
-					u[N] = y;
+					I[q] = W;
 				end;
 			end;
-			writefile(B, N:JSONEncode(u));
+			writefile(G, q:JSONEncode(I));
 		end;
-		task[T[m(a(1), a(134))]](function()
-			while _G[T[m(a(129), a(312))]] do
-				P();
-				task[T[m(a(298), a(40))]](a(377));
+		task[t[z(u(1), u(134))]](function()
+			while _G[t[z(u(129), u(312))]] do
+				R();
+				task[t[z(u(298), u(40))]](u(377));
 			end;
 		end);
 	end;
 	function LoadSettings()
-		local u = T[m(a(284), a(383))];
-		local y = u .. T[m(a(400), a(108))];
-		if not isfile(y) then
-			V:Notification({ [T[m(a(315), a(163))]] = T[m(a(548), a(133))], [T[m(a(394), a(171))]] = a(228) });
+		local I = t[z(u(284), u(383))];
+		local W = I .. t[z(u(400), u(108))];
+		if not isfile(W) then
+			w:Notification({ [t[z(u(315), u(163))]] = t[z(u(548), u(133))], [t[z(u(394), u(171))]] = u(228) });
 			return;
 		end;
-		local B = N:JSONDecode(readfile(y));
-		for u, N in pairs(B) do
-			local y = N;
-			if typeof(N) == T[m(a(571), a(496))] and N[T[m(a(265), a(363))]] then
-				local u = (string[T[m(a(392), a(329))]](N[T[m(a(512), a(325))]], T[m(a(460), a(462))]))[a(228)];
-				y = Enum[T[m(a(514), a(479))]][u];
+		local G = q:JSONDecode(readfile(W));
+		for I, q in pairs(G) do
+			local W = q;
+			if typeof(q) == t[z(u(571), u(496))] and q[t[z(u(265), u(363))]] then
+				local I = (string[t[z(u(392), u(329))]](q[t[z(u(512), u(325))]], t[z(u(460), u(462))]))[u(228)];
+				W = Enum[t[z(u(514), u(479))]][I];
 			end;
-			V[T[m(a(121), a(431))]][u] = y;
-			if i[u] then
-				if typeof(y) == T[m(a(319), a(422))] then
-					i[u]:Set({ [T[m(a(568), a(245))]] = y });
+			w[t[z(u(121), u(431))]][I] = W;
+			if C[I] then
+				if typeof(W) == t[z(u(319), u(422))] then
+					C[I]:Set({ [t[z(u(568), u(245))]] = W });
 				else
-					i[u]:Set(y);
+					C[I]:Set(W);
 				end;
 			end;
 		end;
-		V:Notification({ [T[m(a(15), a(207))]] = T[m(a(535), a(270))], [T[m(a(533), a(471))]] = a(228) });
+		w:Notification({ [t[z(u(15), u(207))]] = t[z(u(535), u(270))], [t[z(u(533), u(471))]] = u(228) });
 	end;
-	function KeepOnRejoin(u)
-		local N = syn and syn[T[m(a(393), a(296))]] or queue_on_teleport or fluxus and fluxus[T[m(a(246), a(263))]];
-		if N and u then
-			N(game:HttpGet(T[m(a(334), a(59))], a(505)));
+	function KeepOnRejoin(I)
+		local q = syn and syn[t[z(u(393), u(296))]] or queue_on_teleport or fluxus and fluxus[t[z(u(246), u(263))]];
+		if q and I then
+			q(game:HttpGet(t[z(u(334), u(59))], u(505)));
 		end;
 	end;
-	i[T[m(a(372), a(39))]] = r:Toggle({ [T[m(a(326), a(84))]] = T[m(a(36), a(328))], [T[m(a(504), a(436))]] = T[m(a(303), a(6))], [T[m(a(211), a(253))]] = function(u)
-				s:AutoHarvestTrees(u);
+	C[t[z(u(372), u(39))]] = j:Toggle({ [t[z(u(326), u(84))]] = t[z(u(36), u(328))], [t[z(u(504), u(436))]] = t[z(u(303), u(6))], [t[z(u(211), u(253))]] = function(I)
+				f:AutoHarvestTrees(I);
 			end });
-	i[T[m(a(357), a(258))]] = r:Toggle({ [T[m(a(373), a(399))]] = T[m(a(172), a(142))], [T[m(a(453), a(308))]] = T[m(a(112), a(225))], [T[m(a(145), a(230))]] = function(u)
-				s:AutoHarvestOres(u);
+	C[t[z(u(357), u(258))]] = j:Toggle({ [t[z(u(373), u(399))]] = t[z(u(172), u(142))], [t[z(u(453), u(308))]] = t[z(u(112), u(225))], [t[z(u(145), u(230))]] = function(I)
+				f:AutoHarvestOres(I);
 			end });
-	i[T[m(a(382), a(9))]] = r:Toggle({ [T[m(a(268), a(468))]] = T[m(a(574), a(86))], [T[m(a(210), a(534))]] = T[m(a(521), a(110))], [T[m(a(551), a(46))]] = function(u)
-				s:AutoFish(u);
+	C[t[z(u(382), u(9))]] = j:Toggle({ [t[z(u(268), u(468))]] = t[z(u(574), u(86))], [t[z(u(210), u(534))]] = t[z(u(521), u(110))], [t[z(u(551), u(46))]] = function(I)
+				f:AutoFish(I);
 			end });
-	i[T[m(a(365), a(442))]] = r:Toggle({ [T[m(a(192), a(395))]] = T[m(a(509), a(345))], [T[m(a(506), a(435))]] = T[m(a(552), a(336))], [T[m(a(499), a(111))]] = function(u)
-				s:AutoPickup(u);
+	C[t[z(u(365), u(442))]] = j:Toggle({ [t[z(u(192), u(395))]] = t[z(u(509), u(345))], [t[z(u(506), u(435))]] = t[z(u(552), u(336))], [t[z(u(499), u(111))]] = function(I)
+				f:AutoPickup(I);
 			end });
-	i[T[m(a(189), a(131))]] = r:Toggle({ [T[m(a(137), a(358))]] = T[m(a(194), a(445))], [T[m(a(16), a(489))]] = T[m(a(73), a(497))], [T[m(a(141), a(299))]] = function(u)
-				s:AutoLoot(u);
+	C[t[z(u(189), u(131))]] = j:Toggle({ [t[z(u(137), u(358))]] = t[z(u(194), u(445))], [t[z(u(16), u(489))]] = t[z(u(73), u(497))], [t[z(u(141), u(299))]] = function(I)
+				f:AutoLoot(I);
 			end });
-	i[T[m(a(139), a(31))]] = c:Toggle({ [T[m(a(530), a(371))]] = T[m(a(152), a(8))], [T[m(a(213), a(116))]] = T[m(a(563), a(302))], [T[m(a(200), a(109))]] = function(u)
-				s:NoZoom(u);
+	C[t[z(u(139), u(31))]] = Z:Toggle({ [t[z(u(530), u(371))]] = t[z(u(152), u(8))], [t[z(u(213), u(116))]] = t[z(u(563), u(302))], [t[z(u(200), u(109))]] = function(I)
+				f:NoZoom(I);
 			end });
-	i[T[m(a(494), a(32))]] = c:Toggle({ [T[m(a(98), a(405))]] = T[m(a(113), a(227))], [T[m(a(58), a(252))]] = T[m(a(412), a(463))], [T[m(a(473), a(458))]] = function(u)
-				s:AutoBandage(u);
+	C[t[z(u(494), u(32))]] = Z:Toggle({ [t[z(u(98), u(405))]] = t[z(u(113), u(227))], [t[z(u(58), u(252))]] = t[z(u(412), u(463))], [t[z(u(473), u(458))]] = function(I)
+				f:AutoBandage(I);
 			end });
-	i[T[m(a(50), a(97))]] = c:Toggle({ [T[m(a(416), a(369))]] = T[m(a(178), a(425))], [T[m(a(356), a(441))]] = T[m(a(269), a(260))], [T[m(a(559), a(93))]] = function(u)
-				s:PatchAntiMacro(u);
+	C[t[z(u(50), u(97))]] = Z:Toggle({ [t[z(u(416), u(369))]] = t[z(u(178), u(425))], [t[z(u(356), u(441))]] = t[z(u(269), u(260))], [t[z(u(559), u(93))]] = function(I)
+				f:PatchAntiMacro(I);
 			end });
-	c:Button({ [T[m(a(94), a(398))]] = T[m(a(320), a(74))], [T[m(a(81), a(89))]] = function()
-			s:ReloadMod(U[T[m(a(539), a(410))]]);
+	Z:Button({ [t[z(u(94), u(398))]] = t[z(u(320), u(74))], [t[z(u(81), u(89))]] = function()
+			f:ReloadMod(J[t[z(u(539), u(410))]]);
 		end });
-	c:Slider({
-		[T[m(a(335), a(242))]] = T[m(a(33), a(423))],
-		[T[m(a(322), a(215))]] = U[T[m(a(532), a(428))]],
-		[T[m(a(572), a(76))]] = a(238),
-		[T[m(a(176), a(520))]] = a(48),
-		[T[m(a(289), a(353))]] = function(u)
-			U[T[m(a(384), a(30))]] = u / a(283);
+	Z:Slider({
+		[t[z(u(335), u(242))]] = t[z(u(33), u(423))],
+		[t[z(u(322), u(215))]] = J[t[z(u(532), u(428))]],
+		[t[z(u(572), u(76))]] = u(238),
+		[t[z(u(176), u(520))]] = u(48),
+		[t[z(u(289), u(353))]] = function(I)
+			J[t[z(u(384), u(30))]] = I / u(283);
 		end,
 	});
-	c:Button({ [T[m(a(515), a(273))]] = T[m(a(415), a(538))], [T[m(a(124), a(540))]] = function()
-			s:RangeMod(U[T[m(a(195), a(344))]]);
+	Z:Button({ [t[z(u(515), u(273))]] = t[z(u(415), u(538))], [t[z(u(124), u(540))]] = function()
+			f:RangeMod(J[t[z(u(195), u(344))]]);
 		end });
-	c:Slider({
-		[T[m(a(240), a(528))]] = T[m(a(305), a(153))],
-		[T[m(a(62), a(247))]] = U[T[m(a(259), a(482))]],
-		[T[m(a(90), a(132))]] = a(374),
-		[T[m(a(199), a(475))]] = a(181),
-		[T[m(a(331), a(309))]] = function(u)
-			U[T[m(a(221), a(266))]] = u;
+	Z:Slider({
+		[t[z(u(240), u(528))]] = t[z(u(305), u(153))],
+		[t[z(u(62), u(247))]] = J[t[z(u(259), u(482))]],
+		[t[z(u(90), u(132))]] = u(374),
+		[t[z(u(199), u(475))]] = u(181),
+		[t[z(u(331), u(309))]] = function(I)
+			J[t[z(u(221), u(266))]] = I;
 		end,
 	});
-	c:Button({ [T[m(a(454), a(427))]] = T[m(a(386), a(337))], [T[m(a(420), a(27))]] = function()
-			s:SpreadMod(U[T[m(a(71), a(447))]]);
+	Z:Button({ [t[z(u(454), u(427))]] = t[z(u(386), u(337))], [t[z(u(420), u(27))]] = function()
+			f:SpreadMod(J[t[z(u(71), u(447))]]);
 		end });
-	c:Slider({
-		[T[m(a(118), a(543))]] = T[m(a(61), a(477))],
-		[T[m(a(501), a(350))]] = U[T[m(a(492), a(219))]],
-		[T[m(a(411), a(11))]] = a(566),
-		[T[m(a(170), a(474))]] = a(130),
-		[T[m(a(402), a(127))]] = function(u)
-			U[T[m(a(99), a(452))]] = u;
+	Z:Slider({
+		[t[z(u(118), u(543))]] = t[z(u(61), u(477))],
+		[t[z(u(501), u(350))]] = J[t[z(u(492), u(219))]],
+		[t[z(u(411), u(11))]] = u(566),
+		[t[z(u(170), u(474))]] = u(130),
+		[t[z(u(402), u(127))]] = function(I)
+			J[t[z(u(99), u(452))]] = I;
 		end,
 	});
-	i[T[m(a(510), a(197))]] = p:Toggle({ [T[m(a(161), a(115))]] = T[m(a(419), a(321))], [T[m(a(553), a(96))]] = T[m(a(216), a(281))], [T[m(a(355), a(35))]] = function(u)
-				s:AutoEat(u);
+	C[t[z(u(510), u(197))]] = p:Toggle({ [t[z(u(161), u(115))]] = t[z(u(419), u(321))], [t[z(u(553), u(96))]] = t[z(u(216), u(281))], [t[z(u(355), u(35))]] = function(I)
+				f:AutoEat(I);
 			end });
-	i[T[m(a(65), a(495))]] = p:Toggle({ [T[m(a(295), a(202))]] = T[m(a(151), a(313))], [T[m(a(367), a(166))]] = T[m(a(44), a(467))], [T[m(a(104), a(21))]] = function(u)
-				s:InfiniteStamina(u);
+	C[t[z(u(65), u(495))]] = p:Toggle({ [t[z(u(295), u(202))]] = t[z(u(151), u(313))], [t[z(u(367), u(166))]] = t[z(u(44), u(467))], [t[z(u(104), u(21))]] = function(I)
+				f:InfiniteStamina(I);
 			end });
-	i[T[m(a(29), a(348))]] = p:Toggle({ [T[m(a(290), a(261))]] = T[m(a(343), a(75))], [T[m(a(25), a(140))]] = T[m(a(175), a(184))], [T[m(a(430), a(438))]] = function(u)
-				s:InfiniteWarmth(u);
+	C[t[z(u(29), u(348))]] = p:Toggle({ [t[z(u(290), u(261))]] = t[z(u(343), u(75))], [t[z(u(25), u(140))]] = t[z(u(175), u(184))], [t[z(u(430), u(438))]] = function(I)
+				f:InfiniteWarmth(I);
 			end });
-	i[T[m(a(54), a(361))]] = p:Toggle({ [T[m(a(576), a(549))]] = T[m(a(537), a(360))], [T[m(a(185), a(60))]] = T[m(a(196), a(188))], [T[m(a(483), a(135))]] = function(u)
-				s:InstantInteract(u);
+	C[t[z(u(54), u(361))]] = p:Toggle({ [t[z(u(576), u(549))]] = t[z(u(537), u(360))], [t[z(u(185), u(60))]] = t[z(u(196), u(188))], [t[z(u(483), u(135))]] = function(I)
+				f:InstantInteract(I);
 			end });
-	local n = {
-			[T[m(a(484), a(456))]] = T[m(a(461), a(346))],
-			[T[m(a(78), a(300))]] = T[m(a(241), a(555))],
-			[T[m(a(349), a(38))]] = T[m(a(186), a(174))],
-			[T[m(a(457), a(536))]] = T[m(a(51), a(333))],
-			[T[m(a(5), a(249))]] = T[m(a(389), a(519))],
-			[T[m(a(287), a(378))]] = T[m(a(508), a(224))],
-			[T[m(a(205), a(3))]] = T[m(a(220), a(556))],
+	local l = {
+			[t[z(u(484), u(456))]] = t[z(u(461), u(346))],
+			[t[z(u(78), u(300))]] = t[z(u(241), u(555))],
+			[t[z(u(349), u(38))]] = t[z(u(186), u(174))],
+			[t[z(u(457), u(536))]] = t[z(u(51), u(333))],
+			[t[z(u(5), u(249))]] = t[z(u(389), u(519))],
+			[t[z(u(287), u(378))]] = t[z(u(508), u(224))],
+			[t[z(u(205), u(3))]] = t[z(u(220), u(556))],
 		};
-	local v = {};
-	i[T[m(a(440), a(203))]] = p:Toggle({ [T[m(a(159), a(43))]] = T[m(a(169), a(446))], [T[m(a(63), a(256))]] = T[m(a(459), a(347))], [T[m(a(272), a(278))]] = function(u)
-				if u then
-					for N, y in n do
-						i[y] = p:Toggle({ [T[m(a(311), a(41))]] = N, [T[m(a(13), a(212))]] = y, [T[m(a(79), a(304))]] = function(N)
-									if N then
-										v[y] = a(505);
+	local c = {};
+	C[t[z(u(440), u(203))]] = p:Toggle({ [t[z(u(159), u(43))]] = t[z(u(169), u(446))], [t[z(u(63), u(256))]] = t[z(u(459), u(347))], [t[z(u(272), u(278))]] = function(I)
+				if I then
+					for q, W in l do
+						C[W] = p:Toggle({ [t[z(u(311), u(41))]] = q, [t[z(u(13), u(212))]] = W, [t[z(u(79), u(304))]] = function(q)
+									if q then
+										c[W] = u(505);
 									else
-										v[y] = nil;
+										c[W] = nil;
 									end;
-									s:AntiSlow(u, v);
+									f:AntiSlow(I, c);
 								end });
-						if V[T[m(a(69), a(234))]][y] then
-							v[y] = a(505);
-							i[y]:Set({ [T[m(a(126), a(183))]] = a(505) });
+						if w[t[z(u(69), u(234))]][W] then
+							c[W] = u(505);
+							C[W]:Set({ [t[z(u(126), u(183))]] = u(505) });
 						end;
 					end;
-					s:AntiSlow(a(505), v);
+					f:AntiSlow(u(505), c);
 				else
-					for u, N in n do
-						if i[N] then
-							i[N]:Delete();
-							i[N] = nil;
+					for I, q in l do
+						if C[q] then
+							C[q]:Delete();
+							C[q] = nil;
 						end;
 					end;
-					s:AntiSlow(a(511), v);
+					f:AntiSlow(u(511), c);
 				end;
 			end });
-	i[T[m(a(567), a(88))]] = g:Toggle({ [T[m(a(418), a(102))]] = T[m(a(301), a(191))], [T[m(a(18), a(143))]] = T[m(a(531), a(271))], [T[m(a(168), a(198))]] = function(u)
-				s:StaffDetection(u);
+	C[t[z(u(567), u(88))]] = A:Toggle({ [t[z(u(418), u(102))]] = t[z(u(301), u(191))], [t[z(u(18), u(143))]] = t[z(u(531), u(271))], [t[z(u(168), u(198))]] = function(I)
+				f:StaffDetection(I);
 			end });
-	i[T[m(a(359), a(55))]] = g:Toggle({ [T[m(a(366), a(380))]] = T[m(a(285), a(267))], [T[m(a(524), a(201))]] = T[m(a(286), a(417))], [T[m(a(214), a(575))]] = function(u)
-				s:NotifyConnections(u);
+	C[t[z(u(359), u(55))]] = A:Toggle({ [t[z(u(366), u(380))]] = t[z(u(285), u(267))], [t[z(u(524), u(201))]] = t[z(u(286), u(417))], [t[z(u(214), u(575))]] = function(I)
+				f:NotifyConnections(I);
 			end });
-	i[T[m(a(162), a(324))]] = I:Keybind({
-			[T[m(a(251), a(516))]] = T[m(a(464), a(282))],
-			[T[m(a(87), a(409))]] = Enum[T[m(a(128), a(14))]][T[m(a(165), a(478))]],
-			[T[m(a(103), a(391))]] = T[m(a(279), a(138))],
-			[T[m(a(455), a(222))]] = function(u)
-				V[T[m(a(408), a(226))]][T[m(a(451), a(257))]] = u;
-				V:Toggle();
+	C[t[z(u(162), u(324))]] = P:Keybind({
+			[t[z(u(251), u(516))]] = t[z(u(464), u(282))],
+			[t[z(u(87), u(409))]] = Enum[t[z(u(128), u(14))]][t[z(u(165), u(478))]],
+			[t[z(u(103), u(391))]] = t[z(u(279), u(138))],
+			[t[z(u(455), u(222))]] = function(I)
+				w[t[z(u(408), u(226))]][t[z(u(451), u(257))]] = I;
+				w:Toggle();
 			end,
 		});
-	i[T[m(a(37), a(120))]] = I:Toggle({ [T[m(a(144), a(558))]] = T[m(a(339), a(72))], [T[m(a(100), a(306))]] = T[m(a(53), a(180))], [T[m(a(217), a(562))]] = function(u)
-				AutosaveSettings(u);
+	C[t[z(u(37), u(120))]] = P:Toggle({ [t[z(u(144), u(558))]] = t[z(u(339), u(72))], [t[z(u(100), u(306))]] = t[z(u(53), u(180))], [t[z(u(217), u(562))]] = function(I)
+				AutosaveSettings(I);
 			end });
-	i[T[m(a(107), a(318))]] = I:Toggle({ [T[m(a(323), a(291))]] = T[m(a(229), a(209))], [T[m(a(67), a(223))]] = T[m(a(147), a(275))], [T[m(a(570), a(470))]] = function(u)
-				KeepOnRejoin(u);
+	C[t[z(u(107), u(318))]] = P:Toggle({ [t[z(u(323), u(291))]] = t[z(u(229), u(209))], [t[z(u(67), u(223))]] = t[z(u(147), u(275))], [t[z(u(570), u(470))]] = function(I)
+				KeepOnRejoin(I);
 			end });
-	if not _G[T[m(a(545), a(66))]] then
+	if not _G[t[z(u(545), u(66))]] then
 		LoadSettings();
 	end;
 end)(...);
